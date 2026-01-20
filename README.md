@@ -103,14 +103,10 @@ CREATE TABLE IF NOT EXISTS migrations (
 ## ▶️ Como rodar o projeto
 
 1. Instalar dependências
-```
-npm install
-```
+```npm install```
 
 2. Executar migrations
-```
-npm run migrate
-```
+```npm run migrate```
 
 ## ⚠️ Decisões Técnicas Importantes
 
