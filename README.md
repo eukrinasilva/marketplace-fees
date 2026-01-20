@@ -93,12 +93,13 @@ Migrations são arquivos SQL versionados que:
 - evitam alterações manuais
 
 ### Exemplo de migration
-```sql
+```
 CREATE TABLE IF NOT EXISTS migrations (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name TEXT NOT NULL UNIQUE,
   executed_at TEXT DEFAULT CURRENT_TIMESTAMP
 );
+```
 
 ## ▶️ Como rodar o projeto
 
