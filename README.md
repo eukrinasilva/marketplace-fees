@@ -63,17 +63,19 @@ Cada etapa é construída **intencionalmente**, mesmo que pareça “mais trabal
 
 ## 🗂 Estrutura Atual do Projeto
 
+```
 marketplace-fees/
 ├─ src/
-│ └─ db/
-│ ├─ migrations/
-│ │ └─ 001_init.sql
-│ ├─ database.ts
-│ └─ migrate.ts
+│  └─ db/
+│     ├─ migrations/
+│     │  └─ 001_init.sql
+│     ├─ database.ts
+│     └─ migrate.ts
 ├─ database.sqlite
 ├─ package.json
 ├─ tsconfig.json
 └─ README.md
+```
 
 
 ### 📌 Observação importante
