@@ -80,7 +80,7 @@ marketplace-fees/
 
 ### 📌 Observação importante
 Neste estágio, **não existe arquitetura de negócio ainda**.  
-Estamos conscientemente focados apenas em **infraestrutura e persistência**.
+Estou conscientemente focada apenas em **infraestrutura e persistência**.
 
 ---
 
@@ -99,3 +99,69 @@ CREATE TABLE IF NOT EXISTS migrations (
   name TEXT NOT NULL UNIQUE,
   executed_at TEXT DEFAULT CURRENT_TIMESTAMP
 );
+
+## ▶️ Como rodar o projeto
+
+1. Instalar dependências
+```
+npm install
+```
+
+2. Executar migrations
+```
+npm run migrate
+```
+
+## ⚠️ Decisões Técnicas Importantes
+
+### ❌ Por que não usei ORMs?
+
+- Escondem SQL
+- Criam falsa sensação de simplicidade
+- Prejudicam aprendizado de base
+
+### ❌ Por que não usei esModuleInterop?
+
+- Mascara diferenças entre CommonJS e ES Modules
+- Dificulta entendimento real do Node.js
+- Gera bugs difíceis de diagnosticar no futuro
+
+## 🧠 O que este projeto ensina (até agora)
+
+- Como Node.js realmente carrega módulos
+- Diferença entre CommonJS e ES Modules
+- Como conectar e usar SQLite
+- Como executar SQL a partir do Node
+- Fundamentos de migrations
+- Disciplina de evolução incremental
+
+## 🧭 Próximos Passos Planejados
+
+### A evolução natural do projeto segue esta ordem:
+
+- Controle de migrations (executar apenas uma vez)
+- Criação da tabela ```fees```
+- Inserts e selects reais
+- Repositório de dados
+- Regras de cálculo
+- Arquitetura Clean
+- Comparação entre marketplaces
+- Interface CLI ou API
+
+Cada passo será feito apenas quando o anterior estiver compreendido.
+
+## 🧠 Filosofia do Projeto
+
+### Este projeto é uma incubadora de aprendizado, não um template pronto.
+
+- Clareza > rapidez
+- Fundamento > abstração
+- Entendimento > copiar código
+
+#### Se algo parecer “mais trabalhoso”, provavelmente é intencional.
+
+## 📌 Nota Final
+
+### Este repositório pode (e deve) evoluir junto com o aprendizado.
+
+#### O README será atualizado conforme novas camadas surgirem.
