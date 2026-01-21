@@ -66,15 +66,20 @@ Cada etapa é construída **intencionalmente**, mesmo que pareça “mais trabal
 ```
 marketplace-fees/
 ├─ src/
-│  └─ db/
-│     ├─ migrations/
-│     │  └─ 001_init.sql
-│     ├─ database.ts
-│     └─ migrate.ts
-├─ database.sqlite
-├─ package.json
-├─ tsconfig.json
-└─ README.md
+│  ├─ domain/
+│  │  ├─ marketplace/
+│  │  │  ├─ entity/
+│  │  │  └─ gateway/
+│  │  └─ sales/
+│  ├─ application/
+│  │  └─ use-cases/
+│  ├─ infra/
+│  │  └─ database/
+│  │     └─ sqlite/
+│  │        ├─ migrations/
+│  │        ├─ connection.ts
+│  │        └─ repositories/
+│  └─ main.ts
 ```
 
 
